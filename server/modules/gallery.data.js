@@ -1,16 +1,16 @@
 const galleryItems = [
-  {
-    id: 1,
-    path: 'images/goat_small.jpg',
-    description: 'Photo of a goat taken at Glacier National Park.',
-    likes: 0,
-  },
-  {
-    id: 2,
-    path: '/images/venus_mars_jupiter.png',
-    description: `The evening view from my home in Colorado. Venus is the bright star in the middle of the photo. Mars is the lower bright star to the left (10 o'clock position). Jupiter is the bright star just above Mars.`,
-    likes: 4,
-  },
+  // {
+  //   id: 1,
+  //   path: 'images/goat_small.jpg',
+  //   description: 'Photo of a goat taken at Glacier National Park.',
+  //   likes: 0,
+  // },
+  // {
+  //   id: 2,
+  //   path: '/images/venus_mars_jupiter.png',
+  //   description: `The evening view from my home in Colorado. Venus is the bright star in the middle of the photo. Mars is the lower bright star to the left (10 o'clock position). Jupiter is the bright star just above Mars.`,
+  //   likes: 4,
+  // },
   {
     id: 3,
     path: 'images/firey_sunset.jpg',
@@ -135,7 +135,7 @@ const galleryItems = [
     description:
       '15th Century religious statue, referred to a "Black Madonna."',
     likes: 0,
-  },
+    },
   { id: 23, path: 'images/bw_park_kuwait.jpg', description: 'Chad in a park in Kuwait City.', likes: 0 },
   { id: 24, path: 'images/cat_mouse_cathedral.jpg', description: 'Mummified cat and mouse carcass found in an organ pipe in Cathedral of Dublin, Ireland.', likes: 0 },
   { id: 25, path: 'images/chad_eiffel_tower.jpg', description: 'Chad in front of the Eiffel Tower in Paris, France.', likes: 0 },
