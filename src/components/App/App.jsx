@@ -7,8 +7,18 @@ function App() {
 
 const [ gallery , setGallery ] = useState([]);
 
-let getGallery = ()=>{
-  console.log('in gallery')
+useEffect( ()=>{
+  getGallery();
+}, []);
+
+let getGallery = () => {
+  console.log('in gallery').then( (response )=>{
+    console.log( 'back from GET with:', response.data )
+    setGallery( response.data );
+  }).catch((err)=>{
+    console.log(err);
+    alert( 'your GET says no' );
+  }) 
 }
 
     return (
