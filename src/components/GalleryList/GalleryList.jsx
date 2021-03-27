@@ -4,7 +4,7 @@ function GalleryList( props ){
     return(
         <>
             <ul>
-                { props.gallery.map( ( item, index ) => <GalleryItem item={item} key={index}/> )}
+            { props.gallery.map( image => <GalleryItem key = { image.id } description = { image.description } path = {image.path} id = {image.id} likes = { image.likes } addLike = { props.addLike } /> )}
             </ul>
         </>
     )
