@@ -12,7 +12,8 @@ useEffect( ()=>{
 }, []);
 
 let getGallery = () => {
-  console.log('/gallery').then( (response )=>{
+  console.log('in getGallery')
+  axios.get('/gallery').then( (response )=>{
     console.log( 'back from GET with:', response.data )
     setGallery( response.data );
   }).catch((err)=>{
@@ -29,7 +30,8 @@ let getGallery = () => {
         <p>Gallery goes here</p>
         <p>{JSON.stringify(gallery)}</p>
           <ul>
-            { gallery.map( ( item, index ) => <li key={index}> <img src={item.path}></img> {item.description} {item.likes} </li>)}
+            { gallery.map( ( item, index ) => <li key={index}> 
+            <img src={item.path}></img> {item.description} {item.likes} </li>)}
           </ul>
       </div>
     );
