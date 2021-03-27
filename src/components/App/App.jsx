@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 function App() {
 
@@ -12,7 +12,7 @@ useEffect( ()=>{
 }, []);
 
 let getGallery = () => {
-  console.log('in gallery').then( (response )=>{
+  console.log('/gallery').then( (response )=>{
     console.log( 'back from GET with:', response.data )
     setGallery( response.data );
   }).catch((err)=>{
@@ -28,9 +28,9 @@ let getGallery = () => {
         </header>
         <p>Gallery goes here</p>
         <p>{JSON.stringify(gallery)}</p>
-        // <ul>
-        //   { gallery.map( ( item, index ) => <li>{gallery.name}</li>)}
-        // </ul>
+          <ul>
+            { gallery.map( ( item, index ) => <li key={index}> <img src={item.path}></img> {item.description} {item.likes} </li>)}
+          </ul>
       </div>
     );
 }
