@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import './GalleryItem.css'
 
 function GalleryItem( props ) {
     const [showImage, setShowImage] = useState(false);
