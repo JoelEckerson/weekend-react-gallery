@@ -11,6 +11,7 @@ function GalleryItem( props ) {
             display = <div onClick = {toggleImage} className='wrapper'>
                 <p>{props.description}</p></div>
         }
+        return display;
     }
 
     let toggleImage = () => {
