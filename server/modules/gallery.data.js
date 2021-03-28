@@ -23,12 +23,12 @@ const galleryItems = [
     description: 'My first dog, Max.',
     likes: 0,
   },
-  {
-    id: 5,
-    path: 'images/saint_chappell.jpg',
-    description: 'Interior and Rose of Sain Chappell in Paris, France.',
-    likes: 0,
-  },
+  // {
+  //   id: 5,
+  //   path: 'images/saint_chappell.jpg',
+  //   description: 'Interior and Rose of Sain Chappell in Paris, France.',
+  //   likes: 0,
+  // },
   {
     id: 6,
     path: 'images/park_near_louvre.jpg',

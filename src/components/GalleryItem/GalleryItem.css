@@ -1,0 +1,10 @@
+div {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.wrapper {
+    border: solid 5px #088190;
+    width: 275px;
+    height: 275px;
+}

@@ -23,7 +23,7 @@ function GalleryItem( props ) {
             <div>
                 {displayImage()}
                 <p>Likes: {props.likes}</p>
-                <button onClick = {() => props.addLike( props.id )}>Like Me</button>
+                <button onClick = {() => props.addLike( props.id )}>Give A Like</button>
             </div>
         </>
     )
